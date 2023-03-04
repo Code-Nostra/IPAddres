@@ -16,10 +16,6 @@ class Program
 			ipAddreses[i] = Console.ReadLine();
 		}
 
-
-
-		
-
 		string[] Mask = new string[count];
 
 		for (int i = 0; i < count; i++)
@@ -82,17 +78,6 @@ class Program
 
 			string binaryIp = string.Join(".", ipParts
 				.Select(octet => Convert.ToString(int.Parse(octet), 2).PadLeft(8, '0')));
-
-
-
-
-
-
-
-
-
-
-
 
 			Console.WriteLine($"IP-адрес: {string.Join(".", ipBytes)}");
 			Console.WriteLine($"IP-адрес в двоичном виде: {binaryIp}");
